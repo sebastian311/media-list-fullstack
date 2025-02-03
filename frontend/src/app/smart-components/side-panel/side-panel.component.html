@@ -1,0 +1,56 @@
+<nav>
+  <section class="navigation">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="300"
+      height="100"
+      viewBox="0 0 300 100"
+    >
+      <text
+        x="50%"
+        y="50%"
+        font-family="Arial, sans-serif"
+        font-size="24"
+        fill="black"
+        text-anchor="middle"
+        alignment-baseline="middle"
+      >
+        Media-Lists
+      </text>
+      <text
+        x="50%"
+        y="75%"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="gray"
+        text-anchor="middle"
+        alignment-baseline="middle"
+      >
+        For your media lists, and more!
+      </text>
+    </svg>
+
+    <ul>
+      <li>
+        <a [routerLink]="['']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['/authorize']" routerLinkActive="router-link-active">Login/Register an account</a>
+      </li>
+      <li>
+        <a [routerLink]="['/user-info']" routerLinkActive="router-link-active">Profile</a>
+      </li>
+      <li>
+        <a [routerLink]="['/my-list']" routerLinkActive="router-link-active">My lists</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="footer">
+    <mat-slide-toggle (change)="toggleTheme()"
+      >Toggle {{ themeType }} mode!</mat-slide-toggle
+    >
+
+    <mat-icon class="logout-icon" aria-hidden="false" fontIcon="logout" (click)="logout()"></mat-icon>
+  </section>
+</nav>

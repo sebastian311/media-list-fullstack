@@ -1,0 +1,21 @@
+/* Angular Materials dependency*/
+@import "@angular/material/prebuilt-themes/azure-blue.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Color tokens for bright theme*/
+:root {
+  --main-color-1: #f1faee;
+  --main-color-2: #f1faeeaf;
+  --secondary-color: #457b9d;
+  --link-color: #5c9fa1;
+}
+
+/* Color tokens for dark theme*/
+[data-theme="dark"] {
+  --main-color-1: #1d3557;
+  --main-color-2: #2a3f5c;
+  --secondary-color: #e63946;
+  --link-color: #44af69;
+}

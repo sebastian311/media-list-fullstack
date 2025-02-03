@@ -1,0 +1,19 @@
+.auth-container {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-color-1);
+}
+
+.submit-button {
+  background-color: var(--secondary-color) !important;
+  color: #ffff !important;
+}
+
+.full-width {
+  width: 100%;
+}
