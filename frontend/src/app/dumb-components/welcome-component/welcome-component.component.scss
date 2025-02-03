@@ -84,7 +84,10 @@
   }
 
   .welcome-footer {
+    position: fixed;
     font-size: 14px;
     color: #457b9d;
+    bottom: 5%;
+    align-self: flex-end;
   }
 }
